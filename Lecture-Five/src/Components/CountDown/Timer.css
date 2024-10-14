@@ -1,0 +1,74 @@
+Body Styling
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    /* background: linear-gradient(to bottom right, #000000, #434343); Dark gradient background */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Main Container Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow for more depth */
+    backdrop-filter: blur(10px); /* Blur effect for a frosted glass look */
+}
+
+/* Timer Styling */
+.timer {
+    display: flex;
+    gap: 15px; /* Increased gap for better spacing */
+    font-size: 60px; /* Larger font size */
+    font-weight: 700;
+    color: #e0e0e0; /* Light text color */
+    margin-bottom: 20px; /* Space below timer */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+
+/* Time Control Section Styling */
+.TimeControl {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between controls */
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Gradient background */
+    color: white; /* White text */
+    border: none;
+    outline: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Padding inside the button */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+button:hover {
+    background: linear-gradient(to right, #45a049, #66bb6a); /* Darker gradient on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly smaller on click */
+}
+
+/* Optional: Add a responsive design for smaller screens */
+@media (max-width: 600px) {
+    .timer {
+        font-size: 40px; /* Smaller font size on small screens */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button text on small screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
